@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You're Beautiful — Full Interactive</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2, a {
+      text-align: center;
+      margin: 10px;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    h2 {
+      color: pink;
+    }
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 40px;
+    }
+    .side {
+      flex: 1;
+      text-align: center;
+    }
+    .center {
+      flex: 2;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .lyrics {
+      text-align: center;
+      margin: 20px auto;
+    }
+    .line {
+      margin: 12px 0;
+    }
+    .options {
+      display: inline-block;
+    }
+    .option {
+      display: inline-block;
+      background: #333;
+      border: 1px solid pink;
+      color: pink;
+      padding: 4px 10px;
+      margin: 0 4px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .option.correct {
+      background-color: #228B22;
+      color: white;
+    }
+    .option.incorrect {
+      background-color: #8B0000;
+      color: white;
+    }
+    .button-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    img {
+      max-width: 100%;
+    }
+  
+    .lip {
+      position: absolute;
+      width: 50px;
+      height: auto;
+      pointer-events: none;
+    }
+    </style>
+    
+</head>
+<body>
+  <h1>Listen & Sing</h1>
+  <div style="text-align:center;"><a href="https://t.me/joinandgetinspired" target="_blank">Join & GetInspired</a></div>
+  <h2>You're beautiful</h2>
+
+  <div class="main">
+    <div class="side" style="position: relative; width: 300px; height: 600px;">
+      <img src="./20250507_1616_Девушка в стиле_remix_01jtn7a8n6ff6tc0w5apn94026-Photoroom.png" width="200" />
+    </div>
+    <div class="center">
+      <div style="text-align:center;"><audio controls>
+        <source src="./James Blunt — You're Beautiful (www.lightaudio.ru).mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio></div>
+
+      <div class="lyrics">
+        <!-- Часть строк (пример) -->
+        <div class="line">My life is brilliant</div>
+        <div class="line">My love is pure</div>
+        <div class="line">I saw an <span class="options" data-correct="angel"><span class="option">angle</span><span class="option">angel</span><span class="option">anger</span></span></div>
+        <div class="line">Of that I'm sure</div>
+        <div class="line">She smiled at me on the subway</div>
+        <div class="line">She was with another <span class="options" data-correct="man"><span class="option">men</span><span class="option">man</span><span class="option">mom</span></span></div>
+        <div class="line">But I won't lose no sleep on that</div>
+        <div class="line">'Cause I've got a <span class="options" data-correct="plan"><span class="option">plan</span><span class="option">pain</span><span class="option">plane</span></span></div>
+        <div class="line">You're beautiful</div>
+        <div class="line">You're beautiful</div>
+        <div class="line">You're beautiful, it's <span class="options" data-correct="true"><span class="option">blue</span><span class="option">true</span><span class="option">truly</span></span></div>
+        <div class="line">I saw your face in a crowded place</div>
+        <div class="line">And I don't know what to <span class="options" data-correct="do"><span class="option">do</span><span class="option">due</span><span class="option">too</span></span></div>
+        <div class="line">'Cause I'll never be with you</div>
+        
+    <div class="line">Yes, she caught my eye</div>
+    <div class="line">As I walked on by</div>
+    <div class="line">She could see from my face that I was <span class="options" data-correct="fucking high"><span class="option">looking shy</span><span class="option">fucking high</span><span class="option">walking by</span></span></div>
+    <div class="line">And I don't think that I'll see her again</div>
+    <div class="line">But we shared a moment that will last till the <span class="options" data-correct="end"><span class="option">start</span><span class="option">night</span><span class="option">end</span></span></div>
+
+    <div class="line">You're beautiful</div>
+    <div class="line">You're beautiful</div>
+    <div class="line">You're beautiful, it's <span class="options" data-correct="true"><span class="option">true</span><span class="option">blue</span><span class="option">truly</span></span></div>
+    <div class="line">I saw your face in a crowded place</div>
+    <div class="line">And I don't know what to <span class="options" data-correct="do"><span class="option">to</span><span class="option">due</span><span class="option">do</span></span></div>
+    <div class="line">'Cause I'll never be with you</div>
+
+    <div class="line">Ba, la, la, na</div>
+    <div class="line">Ba, la, la, na</div>
+    <div class="line">Ba, la, la, na, na</div>
+
+    <div class="line">You're beautiful</div>
+    <div class="line">You're beautiful</div>
+    <div class="line">You're beautiful, it's <span class="options" data-correct="true"><span class="option">true</span><span class="option">new</span><span class="option">truee</span></span></div>
+    <div class="line">There must be an angel with a smile on her face</div>
+    <div class="line">When she thought up that I should be with <span class="options" data-correct="you"><span class="option">her</span><span class="option">me</span><span class="option">you</span></span></div>
+    <div class="line">But it's time to face the truth</div>
+    <div class="line">I will never be with you</div>
+    
+      </div>
+
+      <div class="button-container">
+        <button onclick="showTranslation()">Translate</button>
+        <button onclick="startDiscussion()">Let's Discuss</button>
+      </div>
+    </div>
+    <div class="side" style="position: relative; width: 300px; height: 600px;">
+      <img src="./lips.png" width="60" />
+      <img src="./lips.png" width="60" />
+      <img src="./lips.png" width="60" />
+      <img src="./lips.png" width="60" />
+      <img src="./lips.png" width="60" />
+      <img src="./lips.png" width="60" />
+      <img src="./lips.png" width="60" />
+      <img src="./lips.png" width="60" />
+      <img src="./lips.png" width="60" />
+      <img src="./lips.png" width="60" />
+    <img src="./lips.png" class="lip" style="top:0px; left:210px;" />
+<img src="./lips.png" class="lip" style="top:0px; left:70px;" />
+<img src="./lips.png" class="lip" style="top:330px; left:70px;" />
+<img src="./lips.png" class="lip" style="top:440px; left:70px;" />
+<img src="./lips.png" class="lip" style="top:440px; left:280px;" />
+<img src="./lips.png" class="lip" style="top:110px; left:70px;" />
+<img src="./lips.png" class="lip" style="top:220px; left:0px;" />
+<img src="./lips.png" class="lip" style="top:110px; left:140px;" />
+<img src="./lips.png" class="lip" style="top:110px; left:0px;" />
+<img src="./lips.png" class="lip" style="top:110px; left:210px;" />
+<img src="./lips.png" class="lip" style="top:440px; left:140px;" />
+<img src="./lips.png" class="lip" style="top:440px; left:210px;" />
+<img src="./lips.png" class="lip" style="top:0px; left:0px;" />
+<img src="./lips.png" class="lip" style="top:220px; left:70px;" />
+<img src="./lips.png" class="lip" style="top:440px; left:0px;" />
+<img src="./lips.png" class="lip" style="top:220px; left:210px;" />
+<img src="./lips.png" class="lip" style="top:330px; left:210px;" />
+<img src="./lips.png" class="lip" style="top:110px; left:280px;" />
+<img src="./lips.png" class="lip" style="top:330px; left:140px;" />
+<img src="./lips.png" class="lip" style="top:0px; left:280px;" />
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.options').forEach(group => {
+      const correct = group.getAttribute('data-correct');
+      group.querySelectorAll('.option').forEach(opt => {
+        opt.addEventListener('click', () => {
+          group.querySelectorAll('.option').forEach(o => {
+            o.classList.remove('correct', 'incorrect');
+          });
+          if (opt.textContent === correct) {
+            opt.classList.add('correct');
+          } else {
+            opt.classList.add('incorrect');
+          }
+        });
+      });
+    });
+
+    function showTranslation() {
+      alert(`Перевод:
+Моя жизнь прекрасна
+Моя любовь чиста
+Я видел ангела
+И я в этом уверен
+Она улыбнулась мне в метро
+Она была с другим мужчиной
+Но я не переживаю
+Потому что у меня есть план
+
+Ты прекрасна
+Ты прекрасна
+Ты прекрасна, это правда
+Я увидел твоё лицо в толпе
+И я не знаю, что делать
+Потому что я никогда не буду с тобой`);
+    }
+
+    function startDiscussion() {
+      alert(`Let's discuss:
+1. Why does the narrator remember this moment?
+2. Have you ever experienced something similar?
+3. Is the song romantic or sad? Why?
+4. What would you do in the narrator's place?
+5. Do you think this moment changed his life?`);
+    }
+  </script>
+</body>
+</html>
